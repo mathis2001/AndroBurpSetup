@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CERT_PATH="cacert.der"
+CERT_PATH="path/to/cert.der"
 
 openssl x509 -inform DER -in $CERT_PATH -out cacert.pem
 
