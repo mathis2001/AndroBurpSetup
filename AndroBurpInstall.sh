@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CERT="path/to/burp/certificate"
+CERT=$1
 
 if ! [ -x "$(command -v adb)" ]; then
   echo 'Error: ADB is not installed.'
