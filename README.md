@@ -3,17 +3,17 @@ Burp certificate installer for Android emulator.
 
 ### Usage
 
-Before starting the script, export your burp certificate from Burp Suite and convert it with these lines:
+Before starting the script, export your burp certificate as "cert.der" from Burp Suite and convert it with AndroBurpConverter.sh giving him the path to the file as argument.
 
 ```bash
-$ openssl x509 -inform DER -in cacert.der -out cacert.pem
-puis,
-$ CERT="`openssl x509 -inform PEM -subject_hash_old -in cacert.pem | head -1`.0"
-puis,
-$ mv cacert.pem $CERT
+$ bash AndroBurpConverter.sh path/to/cert.der
 ```
 
-Then, change the CERT variable in AndroBurpInstall.sh for the path to your certificate and launch the script.
+Then, do the same with the AndroBurpInstaller.sh script.
+
+```bash
+$ bash AndroBurpInstaller.sh path/to/9a5ba575.0
+```
 
 ### Video
 
