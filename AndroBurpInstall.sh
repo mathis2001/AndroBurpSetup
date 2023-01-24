@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 CERT="path/to/burp/certificate"
 
 if ! [ -x "$(command -v adb)" ]; then
