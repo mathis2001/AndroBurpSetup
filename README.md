@@ -12,7 +12,7 @@ $ bash AndroBurpConverter.sh path/to/cert.der
 Then, do the same with the AndroBurpInstaller.sh script.
 
 ```bash
-$ bash AndroBurpInstaller.sh path/to/9a5ba575.0
+$ bash AndroBurpInstall.sh path/to/9a5ba575.0
 ```
 
 ### Video
