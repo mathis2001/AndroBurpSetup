@@ -15,8 +15,8 @@ fi
 adb push $CERT /sdcard/
 
 adb root
-sleep 3
+sleep 5
 adb remount
-adb shell "mv /sdcard/$CERT /system/etc/security/cacerts && chmod 644 /system/etc/security/cacerts/$CERT"
+adb shell "mv /sdcard/$CERT /system/etc/security/cacerts && chmod 644 /system/etc/security/cacerts/$CERT | reboot"
 
 echo "Burp Suite certificate installed successfully!"
